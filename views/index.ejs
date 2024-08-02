@@ -1,0 +1,29 @@
+<%- include('header') %>
+
+<h2 id="animated-heading">~The~ MANABASE calculator!</h2>
+<div class="form">
+<form action="/calculate" method="POST">
+
+  <label for="tLands">Total Color Lands? (colorless does not count)</label>
+  <input type="number" name="tLands" id="tLands" required min="0" max="100" ><br>
+
+  <label for="wPips">Total White Pips</label>
+  <input type="number" name="wPips" id="wPips" required min="0" max="100" ><br>
+
+  <label for="uPips">Total Blue Pips</label>
+  <input type="number" name="uPips" id="uPips" required min="0" max="100" ><br>
+
+  <label for="bPips">Total Black Pips</label>
+  <input type="number" name="bPips" id="bPips" required  min="0" max="100"> <br>
+
+  <label for="rPips">Total Red Pips</label>
+  <input type="number" name="rPips" id="rPips" required  min="0" max="100"><br>
+
+  <label for="gPips">Total Green Pips</label>
+  <input type="number" name="gPips" id="gPips" required  min="0" max="100"><br>
+
+  <button type="submit" class="submit-button">Submit!</button>
+</form>
+</div>
+
+<%- include('footer') %>
